@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Màn hình hướng dẫn trước khi chơi -->
+        <div id="start-screen">
+            <h1>Hướng dẫn</h1>
+            <p>Điều khiển con rắn bằng các phím mũi tên. Nhiệm vụ của bạn là ăn táo và tránh va chạm với tường hoặc chính mình.</p>
+            <button id="start-btn">Bắt đầu chơi</button>
+        </div>
+
+        <!-- Khu vực trò chơi -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Màn hình kết thúc trò chơi -->
+        <div id="game-over-screen">
+            <h1>Kết thúc trò chơi!</h1>
+            <p id="final-score">Điểm số: 0</p>
+            <p id="high-score">Điểm cao nhất: 0</p>
+            <button id="restart-btn">Chơi lại</button>
+        </div>
+    </div>
+
+    <!-- Âm thanh chúc mừng khi vượt qua điểm cao nhất -->
+    <audio id="congrats-sound" src="congrats.mp3"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
